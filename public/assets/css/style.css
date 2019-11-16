@@ -5,4 +5,68 @@ body{
 
 .container{
   text-align: center;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-areas:
+    "l mt r"
+    "l mb r";
 }
+
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  margin: 5px;
+}
+
+#left {
+  grid-area: l;
+}
+
+#middle-top {
+  grid-area: mt;
+}
+
+#middle-bottom {
+  grid-area: mb;
+}
+
+#right {
+  grid-area: r;
+}
+
+
+#burger-name {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.devour {
+  margin-bottom: 5px;
+}
+
+
+a:link {
+  color: #918074;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #918074;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #423a35;
+  text-decoration: none;
+}
+
+a:active {
+  color: #423a35;
+  text-decoration: none;
+}
+
