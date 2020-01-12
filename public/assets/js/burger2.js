@@ -4,7 +4,7 @@ $(document).ready(() => {
         var burger = {
             burger_name: $("#burger-name").val().trim()
         };
-
+console.log(burger);
         $.ajax("/api/burger", {
             type: "POST",
             data: burger

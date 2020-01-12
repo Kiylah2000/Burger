@@ -11,10 +11,9 @@ var orm = {
     })
   },
   insertOne: (name, cb) => {
-    let query = "INSERT INTO burger SET ?";
-    connection.query(query, [{
-      burger_name: name
-    }], (err, result) => {
+    let query = "INSERT INTO burger (burger_name,devoured) VALUES (?, ?)";
+    connection.query(query, [
+      name, false], (err, result) => {
       if (err) throw err;
       cb(result);
     })
