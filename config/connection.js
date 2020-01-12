@@ -1,14 +1,6 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "princessK95$",
-  database: "burger_db"
-});
-
 
 var connection;
 if (process.env.JAWSDB_URL) {
@@ -24,6 +16,7 @@ if (process.env.JAWSDB_URL) {
         database: "burger_db"
     })
 };
+app.listen(process.env.PORT || 8080);
 
 var mysql = require('mysql');
 // Make connection.
