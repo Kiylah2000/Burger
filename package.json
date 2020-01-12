@@ -10,14 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/kiylah2000/burger.git"
   },
-
-"keywords": [],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kiylah2000/burger/issues"
   },
-
   "homepage": "https://github.com/kiylah2000/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
