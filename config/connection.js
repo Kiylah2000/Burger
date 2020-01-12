@@ -14,7 +14,7 @@ if (process.env.JAWSDB_URL) {
         user: 'root',
         password: "princessK95$",
         database: "burger_db"
-    });
+    })
 }
 app.listen(process.env.PORT || 8080);
 
