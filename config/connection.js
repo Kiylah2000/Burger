@@ -16,7 +16,6 @@ if (process.env.JAWSDB_URL) {
         database: "burger_db"
     })
 }
-app.listen(process.env.PORT || 8080);
 
 // Make connection.
 connection.connect(function(err) {
